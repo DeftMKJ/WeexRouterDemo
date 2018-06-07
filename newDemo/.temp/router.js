@@ -1,16 +1,27 @@
 import Vue from 'vue'
 /* global Vue */
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import WelcomePage from '@/components/WelcomePage'
+import LoginPage from '@/components/LoginPage'
+import MainTabPage from '@/components/MainTabPage'
 
 Vue.use(Router)
 
 module.exports = new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+    routes: [{
+            path: '/',
+            name: 'WelcomePage',
+            component: WelcomePage
+        },
+        {
+            path: '/login',
+            name: 'LoginPage',
+            component: LoginPage
+        },
+        {
+            path: '/main',
+            name: 'MainTabPage',
+            component: MainTabPage
+        },
+    ]
 })

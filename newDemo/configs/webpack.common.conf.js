@@ -9,7 +9,8 @@ const vueWebTemp = helper.rootNode(config.templateDir);
 const hasPluginInstalled = fs.existsSync(helper.rootNode(config.pluginFilePath));
 const isWin = /^win/.test(process.platform);
 const weexEntry = {
-  'index': helper.root('entry.js')
+  'index': helper.root('entry.js'),
+  'FourthPage': helper.root('entry/FourthPage.js'),
 }
 
 const getEntryFileContent = (source, routerpath) => {

@@ -1,8 +1,15 @@
 <template>
   <div class="wrapper">
-    <image :src="logo" class="logo" />
-    <text class="greeting">The environment is ready!</text>
-    <router-view/>
+    <!-- 根据route配置对应的 meta keep-alive来进行是否缓存 -->
+        <keep-alive>
+          <router-view v-if="$route.meta.keepAlive" @androidback="function() {$router.back()}">
+            <!-- 这里是会被缓存的视图组件-->
+          </router-view>
+        </keep-alive>
+
+        <router-view v-if="!$route.meta.keepAlive" @androidback="function() {$router.back()}">
+          <!-- 这里是不被缓存的视图组件 -->
+        </router-view>
   </div>
 </template>
 
@@ -21,20 +28,5 @@ export default {
   .wrapper {
     justify-content: center;
     align-items: center;
-  }
-  .logo {
-    width: 424px;
-    height: 200px;
-  }
-  .greeting {
-    text-align: center;
-    margin-top: 70px;
-    font-size: 50px;
-    color: #41B883;
-  }
-  .message {
-    margin: 30px;
-    font-size: 32px;
-    color: #727272;
   }
 </style>

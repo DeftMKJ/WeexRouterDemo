@@ -13,9 +13,9 @@
     "clean:web": "rimraf ./release/web",
     "clean:ios": "rimraf ./release/ios",
     "clean:android": "rimraf ./release/android",
-    "dev": "webpack --env.NODE_ENV=common --progress -p --watch",
+    "dev": "webpack --env.NODE_ENV=common --progress --watch",
     "lint": "eslint --ext .js,.vue src  --fix",
-    "serve": "webpack-dev-server --env.NODE_ENV=development -p --progress",
+    "serve": "webpack-dev-server --env.NODE_ENV=development --progress",
     "ios": "weex run ios",
     "web": "npm run serve",
     "android": "weex run android",
@@ -31,6 +31,7 @@
     "phantom-limb": "0.0.1",
     "vue": "^2.5.11",
     "vue-router": "^3.0.1",
+    "weex-ui": "^0.6.4-beta2",
     "weex-vue-render": "^1.0.17"
   },
   "devDependencies": {
