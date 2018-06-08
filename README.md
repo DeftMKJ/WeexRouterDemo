@@ -67,7 +67,8 @@
 
 + 12.良心插件weex-ui [**weex-ui**](https://alibaba.github.io/weex-ui/#/cn/packages/wxc-minibar/)
 
-
+## 详细Demo地址
+[**完整Demo**](https://github.com/CarGuo/GSYGithubAppWeex)
 
 ## 具体展示
 ![](https://github.com/DeftMKJ/WeexRouterDemo/blob/master/animation%E7%BB%88%E6%9E%81.gif)
