@@ -1,4 +1,27 @@
 # WeexRouterDemo
+## 前言
+Clone或者下载之后的步骤 </br>
+
+1.`npm install`
+
+2.`weex platform add ios`
+
+3.`weex run ios`
+
+如果没有出现platform文件夹里面的Xcode文件，可以在1和2之间加一句
+
+`weex run ios`
+
+这样子只是最基本的结构和依赖添加，就能正常启动了，但是很多静态资源无法读取，需要更进一步的配置
+
+[**iOS开发之纯Weex+Vuejs开发原生App整体结构和调试步骤（二）**](https://blog.csdn.net/deft_mkjing/article/details/80620093)
+
+另外两个相关的博客
+
+[**iOS开发之Weex爬坑之路环境部署和Devtools Debug（一）**](https://blog.csdn.net/deft_mkjing/article/details/80397305)
+
+[**iOS开发之Weex嵌入已有应用（三）**](https://blog.csdn.net/Deft_MKJing/article/details/80623315)
+
 ## weex + vue + vue-router的简单介绍
 > Weex看了三周，可以说是从完全不懂，能写一点东西出来，这就比较有意思了，很多坑和很多东西需要记录一下
 > 
